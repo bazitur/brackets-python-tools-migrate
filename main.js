@@ -240,7 +240,7 @@ define(function (require, exports, module) {
         // Thus, passing method to EditorManager.
         CodeHintManager.registerHintProvider(python_hints, ["python"], 9);
         EditorManager.registerInlineDocsProvider(python_docs);
-        EditorManager.registerJumpToDefProvider(python_goto);
+        // EditorManager.registerJumpToDefProvider(python_goto);
         CodeInspection.register("python", {
             name: 'Python lint',
             scanFileAsync: python_lint.scanFileAsync
